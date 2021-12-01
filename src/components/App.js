@@ -11,10 +11,10 @@ const [image, setImage] = useState('');
         setLoaded(true);
         setImage(data.message)
         console.log(data)})
-},[loaded,image])
+},[])
 return(
     <div>
-        <p>{loaded?null:"Loading..."}</p>
+        <p>{loaded?null:"Loading"}</p>
         <img src={loaded?image:null} alt="A Random Dog"></img>
     </div>
 )
